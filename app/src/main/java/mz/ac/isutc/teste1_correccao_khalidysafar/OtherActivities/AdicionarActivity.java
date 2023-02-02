@@ -17,7 +17,7 @@ public class AdicionarActivity extends AppCompatActivity {
     Livro livroDados;
 
     private Button bt_add;
-    private EditText edt_titulo, edt_ano, edt_autor, edt_editora;
+    private EditText edt_titulo, edt_autor, edt_editora;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,6 @@ public class AdicionarActivity extends AppCompatActivity {
 
         bt_add = findViewById(R.id.bt_Adicionar);
         edt_titulo = findViewById(R.id.edTitulo);
-        edt_ano = findViewById(R.id.ed_Ano);
         edt_autor = findViewById(R.id.edTitulo);
         edt_editora = findViewById(R.id.edEditora);
 
@@ -37,13 +36,14 @@ public class AdicionarActivity extends AppCompatActivity {
 
                 int i = DataAcess.livroModel.size();
 
-                if(!edt_titulo.getText().toString().isEmpty() && !edt_ano.getText().toString().isEmpty() &&
-                        !edt_autor.getText().toString().isEmpty() && !edt_editora.getText().toString().isEmpty()){
+                if(!edt_titulo.getText().toString().isEmpty() && !edt_autor.getText().toString().isEmpty()
+                        && !edt_editora.getText().toString().isEmpty()){
                     try {
                          livroDados = new Livro(edt_titulo.getText().toString(), edt_editora.getText().toString(),
-                                        edt_autor.getText().toString(), Integer.parseInt(edt_ano.getText().toString()));
+                                        edt_autor.getText().toString());
+
                          DataAcess.livroModel.add(livroDados);
-                         Toast.makeText(getApplicationContext(), "Livro adicionado", Toast.LENGTH_SHORT).show();
+                             Toast.makeText(getApplicationContext(), "Livro adicionado", Toast.LENGTH_SHORT).show();
 
                     }catch (Exception ex){
                         Toast.makeText(getApplicationContext(), ex.getMessage(), Toast.LENGTH_SHORT).show();

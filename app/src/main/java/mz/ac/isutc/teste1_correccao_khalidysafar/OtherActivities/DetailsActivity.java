@@ -18,19 +18,17 @@ public class DetailsActivity extends AppCompatActivity {
 
         txAutor = findViewById(R.id.autor_textview);
         txTitulo = findViewById(R.id.titulo_textview);
-        txtAno = findViewById(R.id.ano_textview);
         txtEditora = findViewById(R.id.editora_textview);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
-            String autor = bundle.getString("Nome");
+
             String titulo = bundle.getString("Titulo");
-            String ano = String.valueOf(bundle.getString("Ano"));
+            String autor = bundle.getString("Autor");
             String editora = bundle.getString("Editora");
 
             txAutor.setText(autor);
             txTitulo.setText(titulo);
-            txtAno.setText(ano);
             txtEditora.setText(editora);
 
         }

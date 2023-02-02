@@ -19,7 +19,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relative_layout"
         android:layout_width="402dp"
-        android:layout_height="wrap_content"
+        android:layout_height="210dp"
         android:padding="16dp">
 
         <TextView
@@ -36,17 +36,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/bookYear"
+            android:id="@+id/bookPublisher"
             android:layout_width="0dp"
             android:layout_height="45dp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="26dp"
             android:layout_marginBottom="10dp"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/bookPublisher" />
+            app:layout_constraintStart_toEndOf="@+id/textView9" />
 
         <TextView
             android:id="@+id/bookAuthor"
@@ -54,35 +52,19 @@
             android:layout_height="45dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="26dp"
-            android:layout_marginBottom="10dp"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/bookPublisher"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/bookTitle" />
-
-        <TextView
-            android:id="@+id/bookPublisher"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/bookYear"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/bookAuthor" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="44dp"
             android:text="Titulo: "
-            app:layout_constraintBottom_toTopOf="@+id/textView7"
             app:layout_constraintEnd_toStartOf="@+id/bookTitle"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -92,26 +74,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="47dp"
+            android:layout_marginTop="29dp"
             android:layout_marginEnd="53dp"
-            android:layout_marginBottom="22dp"
             android:text="Autor"
-            app:layout_constraintBottom_toTopOf="@+id/textView8"
             app:layout_constraintEnd_toStartOf="@+id/bookAuthor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="46dp"
-            android:layout_marginEnd="56dp"
-            android:layout_marginBottom="10dp"
-            android:text="Ano: "
-            app:layout_constraintBottom_toTopOf="@+id/textView9"
-            app:layout_constraintEnd_toStartOf="@+id/bookPublisher"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <TextView
             android:id="@+id/textView9"
@@ -119,12 +87,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
             android:layout_marginEnd="39dp"
-            android:layout_marginBottom="1dp"
+            android:layout_marginBottom="24dp"
             android:text="Editora: "
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bookYear"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintEnd_toStartOf="@+id/bookPublisher"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -3,13 +3,12 @@ package mz.ac.isutc.teste1_correccao_khalidysafar.OtherActivities;
 public class Livro {
 
     private String titulo, autor, editora;
-    private int ano;
 
-    public Livro(String titulo, String autor, String editora, int ano) {
+    public Livro(String titulo, String autor, String editora) {
         this.titulo = titulo;
         this.autor = autor;
         this.editora = editora;
-        this.ano = ano;
+
     }
 
     public String getTitulo() {
@@ -36,11 +35,4 @@ public class Livro {
         this.editora = editora;
     }
 
-    public int getAno() {
-        return ano;
-    }
-
-    public void setAno(int ano) {
-        this.ano = ano;
-    }
 }

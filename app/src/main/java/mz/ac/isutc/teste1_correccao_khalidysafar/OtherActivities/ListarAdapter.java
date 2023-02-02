@@ -45,7 +45,6 @@ public class ListarAdapter extends RecyclerView.Adapter<ListarAdapter.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         TextView bookTitle;
-        TextView bookYear;
         TextView bookAuthor;
         TextView bookPublisher;
 
@@ -53,7 +52,6 @@ public class ListarAdapter extends RecyclerView.Adapter<ListarAdapter.ViewHolder
             super(itemView);
 
             bookTitle = itemView.findViewById(R.id.bookTitle);
-            bookYear = itemView.findViewById(R.id.bookYear);
             bookAuthor = itemView.findViewById(R.id.bookAuthor);
             bookPublisher = itemView.findViewById(R.id.bookPublisher);
 
@@ -63,9 +61,8 @@ public class ListarAdapter extends RecyclerView.Adapter<ListarAdapter.ViewHolder
                 public void onClick(View v) {
                     Intent intent = new Intent(itemView.getContext(), DetailsActivity.class);
 
-                    intent.putExtra("Nome", livroAdapter.get(getAdapterPosition()).getAutor());
                     intent.putExtra("Titulo", livroAdapter.get(getAdapterPosition()).getTitulo());
-                    intent.putExtra("Ano", livroAdapter.get(getAdapterPosition()).getAno());
+                    intent.putExtra("Autor", livroAdapter.get(getAdapterPosition()).getAutor());
                     intent.putExtra("Editora", livroAdapter.get(getAdapterPosition()).getEditora());
 
                     itemView.getContext().startActivity(intent);
