@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Teste1_Correccao - Khalidy Safar</string>
+    <string name="title_activity_listar">Listar Activity</string>
+    <string name="title_activity_adicionar">Adicionar Activity</string>
+    <string name="title_activity_recycler_view_cedoc">Recycler_View_Cedoc</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="teste_1_by_khalidy">TESTE 1 CORRECCAO - BY KHALIDY</string>
+    <string name="titulo_do_livro">Titulo do livro:</string>
+    <string name="adicionar_livros">Adicionar livros</string>
+    <string name="listar_livros">Listar Livros</string>
+    <string name="insira_o_titulo">Insira o titulo</string>
+    <string name="autor_do_livro">Autor do livro</string>
+    <string name="insira_o_ano_do_livro">Insira o ano do livro</string>
+    <string name="ano_do_livro">Ano do Livro</string>
+    <string name="insira_o_autor_do_livro">Insira o autor do livro</string>
+    <string name="nome_da_editora">Nome da editora</string>
+    <string name="insira_o_nome_da_editora">Insira o nome da editora</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="adicionar_livro">ADICIONAR LIVRO</string>
+</resources>
